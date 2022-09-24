@@ -1,0 +1,205 @@
+﻿header {
+    display: flex;
+}
+
+.linea-amarilla {
+    background-color: yellow;
+    height: 50px;
+}
+
+
+.logo {
+    display: flex;
+    border-top: 5px solid #fcdf36;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    align-items: center;
+    width: 100%;
+}
+
+    .logo img {
+        margin-left: 50px;
+        height: 45px;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+
+.division-header {
+    margin-left: 10px;
+    font-size: 40px;
+    color: #d2d2d2;
+}
+
+.titulo {
+    font-family: 'Franklin Gothic';
+    margin-left: 10px;
+    color: #525252;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contenedor-datos {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2,450px);
+    gap: 10px;
+    grid-template-rows: 50px repeat(2,80px) 105px;
+    grid-template-areas: "titulo titulo" "DNI NomyAp" "tarj ingreso" "sector visitaA";
+}
+
+.tipo-de-dato {
+    font-family: 'Franklin Gothic';
+}
+
+
+#subtitulo-datos {
+    grid-area: titulo;
+}
+
+#input-DNI {
+    padding-left: 15px;
+    grid-area: DNI;
+}
+
+#nombreyapellido {
+    grid-area: NomyAp;
+}
+
+#tarjetaingreso {
+    padding-left: 15px;
+    grid-area: tarj;
+}
+
+.fecha-ingreso {
+    margin-left: 30px;
+}
+
+#hora-de-ingreso {
+    grid-area: ingreso;
+}
+
+#sector {
+    padding-left: 15px;
+    grid-area: sector;
+}
+
+#visita-a {
+    grid-area: visitaA;
+}
+
+    #sector select, #visita-a select {
+        width: 95%;
+        margin-top: 5px;
+        border: #cccccc 1px solid;
+        height: 25px;
+        border-radius: 5px;
+    }
+
+.subtitulo {
+    font-family: 'Franklin Gothic';
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    margin: 3px;
+    padding-left: 10px;
+    font-size: 15px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    color: #525252;
+}
+
+.contenedor-historial {
+    margin-top: 25px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 900px;
+    gap: 10px;
+    grid-template-rows: 50px 450px;
+    grid-template-areas: "titulo" "tablahistorial";
+}
+
+    .contenedor-historial#subtitulo-datos {
+        grid-area: titulo;
+    }
+
+button {
+    margin-left: 10px;
+    background-color: #fcdf36;
+    font-family: 'Franklin Gothic';
+    border: 0;
+    height: 35px;
+    width: 75px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 5px;
+    border: #cccccc 1px solid;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#mostrar-fecha-ingreso{
+    margin-left: 20px;
+}
+
+table{
+    width:100%;
+    margin-left:15px;
+}
+td{
+    width:350px;
+}
+#boton-ingresar {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

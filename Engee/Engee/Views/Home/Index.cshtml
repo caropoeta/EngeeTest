@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="main">
+    <div class="contenedor-datos">
+        <div class="subtitulo" id="subtitulo-datos">
+            <h3>Datos de la visita</h3>
+        </div>
+        <div id="input-DNI">
+            <label for="dni" class="tipo-de-dato">DNI</label>
+            <br />
+            <input type="number" id="dni"  placeholder="Ingrese numero" name="DNI" maxlength=10 required />
+            <button id="boton-consultar">Consultar</button>
+        </div>
+        <div id="nombreyapellido">
+            <span class="tipo-de-dato">Nombre y Apellido</span>
+            <br />
+            <div id="mostrar-nombreyapellido"></div>
+        </div>
+        <div id="tarjetaingreso">
+            <label for="nro-tarjeta" class="tipo-de-dato">Nro. de Tarjeta de Ingreso</label>
+            <span class="fecha-ingreso tipo-de-dato">Fecha de Ingreso</span>
+            <br />
+            <input type="number" placeholder="Ingrese numero" id="nro-tarjeta" name="nro-tarjeta" required/>
+            <span id="mostrar-fecha-ingreso"> </span>
+        </div>
+        <div id="hora-de-ingreso">
+            <span class="tipo-de-dato">Hora de Ingreso</span><br />
+            <span id="mostrar-hora-ingreso"></span>
+        </div>
+        <div id="sector">
+            <label for="sector" class="tipo-de-dato">Sector</label>
+            <br />
+            <select name="sector" class="selector" id="elegir-sector">
+            </select>
+        </div>
+        <div id="visita-a">
+            <label for="visita-a" class="tipo-de-dato">Visita a</label>
+            <br />
+            <select class="selector" name="visita-a" id="elegir-visita-a">
+            </select>
+            <br />
+            <br />
+            <div id="boton-ingresar">
+                <button>Ingresar</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="contenedor-historial">
+        <div class="subtitulo" id="subtitulo-historial">
+            <h3>Historial de las visitas</h3>
+        </div>
+        <div class="listado-contenedor">
+            <table id="tabla_historial">
+            </table>
+        </div>
+    </div>
+</div>

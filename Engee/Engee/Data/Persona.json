@@ -1,0 +1,27 @@
+[
+    {
+      "Apellido": "Poeta",
+      "Nombre": "Carolina",
+      "FechaNacimiento": "27 de diciembre 1996",
+      "Dni": "40138237"
+    },
+    {
+      "Apellido": "Perze",
+      "Nombre": "Juan",
+      "FechaNacimiento": "27 de septiembre 1990",
+      "Dni": "40132222"
+    },
+    {
+      "Apellido": "Gomez",
+      "Nombre": "Camila",
+      "FechaNacimiento": "10 de enero 1994",
+      "Dni": "38395624"
+    },
+    {
+      "Apellido": "Fernandez",
+      "Nombre": "Sofia",
+      "FechaNacimiento": "15 de mayo 1985",
+      "Dni": "25457845"
+    }
+  ]
+
